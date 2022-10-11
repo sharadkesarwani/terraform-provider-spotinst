@@ -22,6 +22,7 @@ func main() {
 
 	if debugMode {
 		err := plugin.Debug(context.Background(), "terraform-spotinst/local/spotinst", opts)
+		//err := plugin.Debug(context.Background(), "C:/Users/skesarwa/terraformfiles/spotinst/v2/resources/elastigroup_aws/general/terraform-spotinst/local/spotinst", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
